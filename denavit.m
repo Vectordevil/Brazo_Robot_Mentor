@@ -1,9 +1,7 @@
-% DENAVIT Matriz de transformaciÛn homogÈnea.
-% DH = DENAVIT(TETA, D, A, ALFA) devuelve la matriz de transformaciÛn
-% homogÈnea 4 x 4 a partir de los par·metros de Denavit-Hartemberg
+% DENAVIT Matriz de transformaci√≥n homog√©nea.
+% DH = DENAVIT(TETA, D, A, ALFA) devuelve la matriz de transformaci√≥n
+% homog√©nea 4 x 4 a partir de los par√°metros de Denavit-Hartemberg
 % D, ALFA, A y TETA.
-%
-% See also CINDIR.
 function dh=denavit(teta, d, a, alfa)
 
 dh=[cos(teta) -cos(alfa)*sin(teta) sin(alfa)*sin(teta) a*cos(teta);
